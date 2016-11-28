@@ -37,18 +37,21 @@ function changeContent()
 {
 	var t = document.getElementById('content');
 
-	if (index == 3)
+	switch (index)
 	{
-		t.innerHTML = contentthird;
-	}
-	if (index == 2)
-	{
-		t.innerHTML = contentsecond;
-	}
-	if (index == 1)
-	{
-		t.innerHTML = contentfirst;
-	}
+	    case 3:
+	    {
+		    t.innerHTML = contentthird;
+	    }
+        case 2:
+        {
+            t.innerHTML = contentsecond;
+        }
+        case 1:
+        {
+            t.innerHTML = contentfirst;
+        }
+    }
 }
 
 function activateArrow(id)
