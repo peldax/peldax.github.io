@@ -1,0 +1,342 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	background-color: #202020;
+
+    font-family: 'Roboto', sans-serif;
+
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+p, a, span
+{
+	text-decoration: none;
+	color: #202020;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+/* ***** CONTAINER */
+
+#container
+{
+	position: absolute;
+	z-index: -2;
+	left: 0px;
+	top: 0px;
+
+	width: 100vw;
+	height: 100%;
+
+	transition: margin 0.5s ease;
+
+	transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+
+	overflow: hidden;
+}
+
+.panel-transition
+{
+	margin-left: 250px;
+}
+
+/* ************************************ BACKGROUND */
+
+#background
+{
+	top: 0;
+	z-index: -1;
+	width: 100vw;
+
+	pointer-events: none;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+/* ************************************ CONTENTS */
+
+#header, #intro, #arrows
+{
+	position: absolute;
+	max-width: 650px;
+
+	margin: 0;
+	padding: 0;
+}
+
+/* ************************************ HEADER */
+
+#header
+{
+	top: 12vw;
+	left: 18vw;
+}
+
+#header #name
+{
+	font-weight: 400;
+	color: #C00000 !important;
+}
+
+#header #twitter
+{
+	font-size: 0.7em;
+	color: #202020;
+}
+
+#header a, #header p
+{
+	font-size: 22px;
+	padding: 0 0 0.2em 0;
+}
+
+#header a:hover
+{
+	text-decoration: underline;
+}
+
+/* ************************************ INTRO */
+
+#intro
+{
+	top: 8vw;
+	left: 18vw;
+}
+
+#intro a, #intro p
+{
+	font-size: 17px;
+}
+
+/* ************************************ ARROWS */
+
+#arrows
+{
+	top: 19vw;
+	left: 18vw;
+}
+
+#arrows #back, #arrows #forward
+{
+	color: #C00000;
+
+	font-size: 50px;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#arrows #back:hover, #arrows #forward:hover
+{
+	cursor: pointer;
+	color: #FF0000;
+}
+
+.arrow-unavailable
+{
+	cursor: default !important;
+	color: #B5B5B5 !important;
+}
+
+/* *********************************** BUTTONS */
+
+#buttons
+{
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	margin: 20px;
+}
+
+#menu-button
+{
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+#menu-button #rectangles, #home-button #arrow
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#menu-button .rectangle
+{
+	background-color: #202020;
+	height: 4px;
+	width: 25px;
+    margin: 4px 0 0 0;
+}
+
+#home-button #arrow
+{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 25px solid #202020;
+}
+
+#home-button p, #menu-button p
+{
+	display: inline-block;
+    color: #202020;
+    font-size: 25px;
+}
+
+#home-button:hover > p, #menu-button:hover > p
+{
+	text-decoration: underline;
+}
+
+/* *********************************** PANEL */
+
+.logo
+{
+	height: 1.4em;
+	width: 1.4em;
+	padding: 5px 5px 5px 20px;
+	vertical-align: middle;
+}
+
+#panel
+{
+	background-color: #202020;
+
+	left: -250px;
+    top: 0;
+
+	height: 100%;
+    width: 249px;
+
+    z-index: 100;
+    position: fixed;
+
+	border-right: 1px solid #202020;
+
+	transition: margin 0.5s ease;
+
+	transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#panel ul
+{
+	list-style-type: none;
+    padding: 0;
+    margin-top: 30%;
+}
+
+#panel ul li
+{
+    padding: 0;
+	margin: 0 0 5px 0;
+}
+
+#panel ul li a
+{
+    display: block;
+    padding: 0;
+
+    width: 100%;
+	font-size: 1.0em;
+	color: #FFFFFF;
+}
+
+#panel ul li:hover
+{
+    background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+#panel ul li:hover > a
+{
+	text-decoration: none;
+	color: #202020;
+}
+
+#panel ul #cv
+{
+	line-height: 2em;
+	padding: 0 0 0 20px;
+
+	margin: 0 0 10px 0;
+}
+
+#panel ul #home
+{
+	line-height: 1.8em;
+	padding: 0px 0px 0px 20px;
+	margin-top: 30%;
+}
+
+/* *********************************** FOOTER */
+
+#footer
+{
+	position: fixed;
+    width: 100vw;
+	bottom: 0;
+	text-align: center;
+
+	background-color: #202020;
+}
+
+#footer p
+{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 0.8em;
+	
+	color: #ffffff;
+
+	line-height: 1.5em;
+}
+
+/* *********************************** FALLBACK */
+
+@media (max-width: 1300px)
+{
+	#container
+	{
+		overflow-y: auto;
+	}
+	#header, #intro, #background, #arrows, #footer, #home
+	{
+		position: static !important;
+		top: auto;
+		bottom: auto;
+	}
+	#header p, #header a, #intro a, #intro p, #header #twitter, #home p
+	{
+		color: #FFFFFF;
+		font-weight: 300;
+	}
+	#intro, #header
+	{
+		max-width: 70vw;
+		margin: 1em auto 0 auto;
+	}
+	#arrows
+	{
+		margin: 0 0 0 15vw;
+	}
+	#home #arrow
+	{
+		border-right-color: #ffffff;
+	}
+}
