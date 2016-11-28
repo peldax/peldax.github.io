@@ -10,7 +10,7 @@
         <meta name="keywords" content="václav, pelíšek, pelda, peldax, personal, page">
         <meta name="robots" content="index, follow">
         <link href="/favicon.png" rel="icon" type="image/png" sizes="48x48" />
-        <link href="/development/stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="/subStylesheet.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
     </head>
     <body>
