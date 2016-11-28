@@ -12,7 +12,7 @@ var index = 1;
 var contentfirst = `
 <div id="header">
 	<p id="name">Václav Pelíšek <span id="twitter">@peldax</span></p>
-	<p>Junior Researcher at Georgiev Lab</p>
+	<p>Developer. Climber. Perfectionist.</p>
 	<a href="mailto:info@peldax.com" target="_top">info@peldax.com</a>
 </div>
 `;
