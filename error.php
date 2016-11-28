@@ -16,7 +16,7 @@
     <body>
         <div id="container">
             <div id="buttons">
-                <a id ="hbutton" href="http://www.peldax.com">
+                <a id ="hbutton" href="/">
                     <div id="arrow"></div>
                     <p>Home</p>
                 </a>
