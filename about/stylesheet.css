@@ -64,7 +64,7 @@ p, a, span
 
 /* ************************************ CONTENTS */
 
-#header, #intro, #arrows
+#content > div, #arrows
 {
 	position: absolute;
 	max-width: 650px;
@@ -81,13 +81,13 @@ p, a, span
 	left: 18vw;
 }
 
-#header #name
+#header #name > span:not(#twitter)
 {
 	font-weight: 400;
 	color: #C00000 !important;
 }
 
-#header #twitter
+#header #name > span#twitter
 {
 	font-size: 0.7em;
 	color: #202020;
@@ -106,13 +106,13 @@ p, a, span
 
 /* ************************************ INTRO */
 
-#intro
+.intro
 {
 	top: 8vw;
 	left: 18vw;
 }
 
-#intro a, #intro p
+.intro a, .intro p
 {
 	font-size: 17px;
 }

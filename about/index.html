@@ -13,39 +13,36 @@
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/Person">
 		<div id="panel">
 			<ul>
-				<li id="cv" class="space">
-					<a href="/about/Curriculum_vitae.html">
-					Curriculum vitae</a>
-				</li><li class="space" >
-					<a href="https://linkedin.com/in/peldax" target="_blank">
+                <li class="space" >
+					<a itemprop="sameAs" href="https://linkedin.com/in/peldax" target="_blank">
 						<img class="logo" src="logo-li.png" width="1.4em" height="1.4em"/>
 						Linked In
 					</a>
 				</li><li>
-					<a href="http://stackoverflow.com/users/1348833/peldax" target="_blank">
+					<a itemprop="sameAs" href="http://stackoverflow.com/users/1348833/peldax" target="_blank">
 						<img class="logo" src="logo-so.png" width="1.4em" height="1.4em"/>
 						Stackoverflow
 					</a>
 				</li><li class="space">
-					<a href="https://github.com/peldax" target="_blank">
+					<a itemprop="sameAs" href="https://github.com/peldax" target="_blank">
 						<img class="logo" src="logo-gh.png" width="1.4em" height="1.4em"/>
 						Github
 					</a>
 				</li><li>
-					<a href="https://www.facebook.com/vaclav.pelisek" target="_blank">
+					<a itemprop="sameAs" href="https://www.facebook.com/vaclav.pelisek" target="_blank">
 						<img class="logo" src="logo-fb.png" width="1.4em" height="1.4em"/>
 						Facebook
 					</a>
 				</li><li>
-					<a href="https://twitter.com/peldax" target="_blank">
+					<a itemprop="sameAs" href="https://twitter.com/peldax" target="_blank">
 						<img class="logo" src="logo-tw.png" width="1.4em" height="1.4em"/>
 						Twitter
 					</a>
 				</li><li>
-					<a href="https://plus.google.com/u/0/111564084691185534418/about" target="_blank">
+					<a itemprop="sameAs" href="https://plus.google.com/u/0/111564084691185534418/about" target="_blank">
 						<img class="logo" src="logo-g.png" width="1.4em" height="1.4em"/>
 						Google+
 					</a>
@@ -67,18 +64,29 @@
 				</div>
 			</div>
 			<div id="content">
-				<div id="header">
-					<p id="name">Václav Pelíšek <span id="twitter">@peldax</span></p>
-					<p>Developer. Climber. Perfectionist.</p>
+				<div id="header" class="content-item">
+					<p id="name"><span itemprop="givenName">Václav</span> <span itemprop="familyName">Pelíšek</span> <span id="twitter">@peldax</span></p>
+                    <meta itemprop="gender" content="Male" />
+                    <p>Developer. Climber. Perfectionist.</p>
 					<a href="mailto:info@peldax.com" target="_top">info@peldax.com</a>
 				</div>
+                <div class="content-item intro" style="display: none;">
+                    <p>
+                        I am a software / web developer from the Czech Republic, currently studying for a Bachelor’s degree in Cybernetics and Control Engineering. I am also a member of the Georgiev Lab, a research laboratory at the University of West Bohemia. My passion lies in mathematics, especially mathematical analysis, which improves my ability to solve complex algorithmization problems. My approach involves using intuition hand in hand with careful analysis of a given task. I am a perfectionist with a strong enthusiasm for pinpointing the best solutions for non-trivial problems.
+                    </p>
+                </div>
+                <div class="content-item intro" style="display: none;">
+                    <p>
+                        TBA
+                    </p>
+                </div>
 			</div>
 			<div id="arrows">
 				    <span id="back" class="arrow-unavailable" onclick="switchContentBack()"><< </span>
 					<span id="forward" onclick="switchContentForward()"> >></span>
 			</div>
 			<div id="footer">
-				<p>©Václav Pelíšek, 2016</p>
+				<p>©Václav Pelíšek, 2017</p>
 			</div>
 		</div>
 	</body>
