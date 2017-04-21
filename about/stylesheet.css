@@ -81,22 +81,22 @@ p, a, span
 	left: 18vw;
 }
 
-#header #name > span:not(#twitter)
+#header a, #header p
 {
-	font-weight: 400;
-	color: #C00000 !important;
+    font-size: 22px;
+    padding: 0 0 0.2em 0;
 }
 
-#header #name > span#twitter
+#header p:first-of-type > span
+{
+	font-weight: 400;
+	color: #C00000;
+}
+
+#header p:first-of-type > span:last-of-type
 {
 	font-size: 0.7em;
 	color: #202020;
-}
-
-#header a, #header p
-{
-	font-size: 22px;
-	padding: 0 0 0.2em 0;
 }
 
 #header a:hover
