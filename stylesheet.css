@@ -107,3 +107,8 @@ ul li a p
 
 	line-height: 1.5em;
 }
+
+.hidden
+{
+    display: none;
+}
